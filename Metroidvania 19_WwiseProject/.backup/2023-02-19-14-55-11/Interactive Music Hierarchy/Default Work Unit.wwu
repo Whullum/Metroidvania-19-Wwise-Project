@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}" SchemaVersion="103">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="test" ID="{A79C6403-2E81-4C08-BE0A-CBD8ABB8F1E9}" ShortID="826397829">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82859921-F80F-4A28-B40F-355B7CFDC289}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="Swoosh2" ID="{4DA05B24-58C6-4396-A524-6EB14F2E074F}" ShortID="411459078">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Swoosh2" ID="{78F8A7DC-FBB3-449D-8A6C-A8E8758CA8CD}">
+									<Language>SFX</Language>
+									<AudioFile>Swoosh2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="199041263"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{86F37717-10EB-481F-86AE-481D775153A8}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{6E10DA64-8B80-4834-BC58-3EEF56CBCEA4}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Swoosh2" ID="{68501B92-C791-4E54-8111-EA276814E54B}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="763.604166666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Swoosh2" ID="{78F8A7DC-FBB3-449D-8A6C-A8E8758CA8CD}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{93839F31-333D-460E-A133-54D29D161B23}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{DA49CE78-21B7-415C-B6AD-2F7302E84010}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

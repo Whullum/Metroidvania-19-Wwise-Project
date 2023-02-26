@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{3E7969B0-8EFB-4101-8C21-1B9C5F1AAB60}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{3E7969B0-8EFB-4101-8C21-1B9C5F1AAB60}" SchemaVersion="110">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{3E7969B0-8EFB-4101-8C21-1B9C5F1AAB60}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3E7969B0-8EFB-4101-8C21-1B9C5F1AAB60}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Gameplay" ID="{58866559-4C7B-44FB-AA83-529EB257BFA1}">
+					<ChildrenList>
+						<State Name="None" ID="{041CB25E-6916-49E5-969C-38A24C37B086}"/>
+						<State Name="Normal" ID="{C0E2D49E-4EBA-48A4-B988-841722622597}"/>
+						<State Name="Combat" ID="{7D0AB251-7D0E-46D6-AB46-DCCB9B0E2DD8}"/>
+						<State Name="Approach_Enemy" ID="{E5C1FDD6-83E4-4E27-B224-8FD62F69B91B}"/>
+						<State Name="Defeat_Enemy" ID="{FCE6578B-82C5-4EF9-8554-0E2225473DDE}"/>
+						<State Name="Death" ID="{E8EAD319-145C-4736-9FDA-6CDA76566550}"/>
+						<State Name="Low_Health" ID="{DC907D1A-13BD-4033-ACBD-E53B7FA3811B}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
