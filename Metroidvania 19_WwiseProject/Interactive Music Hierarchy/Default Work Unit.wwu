@@ -151,6 +151,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="stage-1-transition-hit" ID="{EB435813-C423-4E38-90F7-254BA6DFAA40}" ShortID="631583960">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
@@ -403,6 +410,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="stage-1-transition-hit" ID="{F758D007-8C35-49B1-B806-D8919620642B}" ShortID="934471987">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
