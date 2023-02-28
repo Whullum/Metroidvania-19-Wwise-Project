@@ -1723,6 +1723,191 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Death-Stinger" ID="{B241B98F-A4E0-48ED-80DE-FFF14B0C14EB}" ShortID="44375191">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82859921-F80F-4A28-B40F-355B7CFDC289}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="serpent-death-stinger" ID="{9FACD57C-CE84-454C-9120-4219A34C84F0}" ShortID="147696847">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="24000"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82859921-F80F-4A28-B40F-355B7CFDC289}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="serpent-death-stinger" ID="{4B100D34-82CE-4142-A157-A3E12922D2B9}" ShortID="434773503">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="serpent-death-stinger" ID="{30E52CA2-0239-458C-B2C0-7888EF936BD3}">
+													<Language>SFX</Language>
+													<AudioFile>serpent-death-stinger.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="652589882"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{E3D0F1FD-B04F-4E38-9DFC-140E568F408B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{222C6EB6-8136-46FA-801C-A1CC71724179}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="serpent-death-stinger" ID="{A53C03EC-AA57-4606-B397-6E4C60965148}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="16875"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="serpent-death-stinger" ID="{30E52CA2-0239-458C-B2C0-7888EF936BD3}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{DCABFA69-D145-4171-A1CC-C14E28E42155}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.875</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{123690C7-4B6A-4105-8711-F8F091AC8223}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.875</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{F8838FBB-F949-41F2-8501-328C4CDC2061}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.875</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{9CAB29BE-CCFA-4FA3-9846-C8EE3C8EC83F}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{E6F20643-9B1A-48E9-BFF6-69F966521CB8}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="6750"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{BFC601B8-2E9F-4C82-90BC-A12F2D5AD222}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{4331BF11-B3B3-42C7-BDF5-772D58BD65DB}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{F69343DA-94FE-4DA1-9EE3-55C06F986D32}" ShortID="694609431">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{16BD99D1-1E5E-413B-AE86-7609F5571784}" ShortID="381899531">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="serpent-death-stinger" ID="{9FACD57C-CE84-454C-9120-4219A34C84F0}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{1F0A681F-068B-4DBE-BE18-6BF956030895}">
@@ -1859,6 +2044,33 @@
 									</ReferenceList>
 									<TransitionInfo/>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{4373A421-464C-49A1-A50D-0A5D91C46343}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Death-Stinger" ID="{B241B98F-A4E0-48ED-80DE-FFF14B0C14EB}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{D7FFDC54-66F6-4623-B52A-4D12755166FD}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Stage-1-Main" ID="{4A1ED18B-17A6-4D2C-A11C-82541082ECBA}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Death-Stinger" ID="{B241B98F-A4E0-48ED-80DE-FFF14B0C14EB}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
@@ -1904,7 +2116,7 @@
 								<PathElementRef Name="Death" ID="{E8EAD319-145C-4736-9FDA-6CDA76566550}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="Enemy-Defeat-Stinger" ID="{135AE3B1-018B-46A8-A0CC-A47F8EFD32F4}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}" Platform="Linked"/>
+								<AudioNodeRef Name="Death-Stinger" ID="{B241B98F-A4E0-48ED-80DE-FFF14B0C14EB}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>
