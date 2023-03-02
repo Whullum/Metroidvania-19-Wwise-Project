@@ -1908,6 +1908,213 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Low-Health" ID="{D86B9369-CD6E-4F0A-A50A-06FC3D5E6DD9}" ShortID="925058346">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82859921-F80F-4A28-B40F-355B7CFDC289}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="serpent-low-health-theme_3-1-23" ID="{72BD5578-24A4-4666-9668-D7FAA857487A}" ShortID="49293133">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="54042.5531914894"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>17</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="RenderEffect0" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Tempo" Type="Real64" Value="80"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82859921-F80F-4A28-B40F-355B7CFDC289}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+											<ObjectRef Name="Hard_Knee_Minus_3dB_RMS" ID="{D083BAE5-F9EF-426B-A311-D9DF8DFE8807}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="serpent-low-health-theme_3-1-23" ID="{4FF37623-EC0A-4834-A123-8B23DB378254}" ShortID="597043322">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="serpent-low-health-theme_3-1-23" ID="{C8375732-B8DB-442D-816F-12FBCAAC16D8}">
+													<Language>SFX</Language>
+													<AudioFile>serpent-low-health-theme_3-1-23.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="92583617"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{7702A8CA-23B2-4C52-93BD-EDED89E78032}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{BC581B2C-266D-4A75-A997-BE0B4B227C81}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="serpent-low-health-theme_3-1-23" ID="{24532321-BF2C-4D94-A1F3-F78496485F77}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="54000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="serpent-low-health-theme_3-1-23" ID="{C8375732-B8DB-442D-816F-12FBCAAC16D8}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{D14069FB-4572-4157-851A-38A1E27FAD8C}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>54</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{A9080B5F-10F7-4EC3-A5C6-23877FAA00D8}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>54</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{3D9D9C8F-1C6D-4532-A62B-E02257F3C317}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>54</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{650B2784-B0DB-4AE1-BD52-EE8F572C7B33}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{47CFCDDD-5A51-46AC-8FFE-84F1DE32FD9C}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="48000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{FAA8B519-5C71-4E78-9B53-89BA0BBFF7F5}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{964595AC-7712-4C5B-9D84-1F40D9F3BCA9}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{73174DBE-733E-4178-ABE1-EBCC9EA4293D}" ShortID="633747926">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{6D1C2526-1E45-4439-8D33-AE33B0895CF1}" ShortID="1066042773">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="serpent-low-health-theme_3-1-23" ID="{72BD5578-24A4-4666-9668-D7FAA857487A}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{1F0A681F-068B-4DBE-BE18-6BF956030895}">
@@ -1921,11 +2128,10 @@
 								<MusicTransition Name="Transition" ID="{0D787F70-A72E-4CC0-B76E-9C8F3ED9396F}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="EnableTransitionFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableTransitionFadeOut" Type="bool" Value="True"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1941,7 +2147,7 @@
 											<MusicFade Name="Source Fade-out" ID="{89070512-19E8-4C55-A5C8-D81CB78CC7FA}">
 												<PropertyList>
 													<Property Name="FadeOffset" Type="Real64" Value="3.5"/>
-													<Property Name="FadeTime" Type="Real64" Value="5.4"/>
+													<Property Name="FadeTime" Type="Real64" Value="6.2"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2071,6 +2277,122 @@
 									</ReferenceList>
 									<TransitionInfo/>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{B3030C77-8494-4A40-9F27-4038E226CCCC}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Low-Health" ID="{D86B9369-CD6E-4F0A-A50A-06FC3D5E6DD9}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{64EB8DDD-3B3C-4D7B-A07B-91C40592072C}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Approaching-Enemy" ID="{A5F6AFB0-D871-4DED-A56E-5656EAD2000B}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Low-Health" ID="{D86B9369-CD6E-4F0A-A50A-06FC3D5E6DD9}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{520D3843-D057-4288-835E-D9D164994A1A}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3.2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{B53E4489-B0FF-4E3E-9F0A-FFDB39654458}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-0.6"/>
+													<Property Name="FadeTime" Type="Real64" Value="1.3"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{2A292261-1406-4F71-9316-8DDA5D8C8BDF}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Stage-1-Main" ID="{4A1ED18B-17A6-4D2C-A11C-82541082ECBA}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Combat" ID="{85B5EC67-2D00-4482-B2E9-11574B26C473}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{EB2304BD-D8C4-4361-ABA7-59716BEFB687}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1.2"/>
+													<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{632D25AB-4B75-41E7-A897-665343087812}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Low-Health" ID="{D86B9369-CD6E-4F0A-A50A-06FC3D5E6DD9}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Combat" ID="{85B5EC67-2D00-4482-B2E9-11574B26C473}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{A4A1944F-448D-4C00-A082-8D57CD995E34}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1.3"/>
+													<Property Name="FadeTime" Type="Real64" Value="2.6"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{689ADADC-F4FA-4713-A2ED-6E02083B5C5B}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Enemy-Defeat-Stinger" ID="{135AE3B1-018B-46A8-A0CC-A47F8EFD32F4}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Combat" ID="{85B5EC67-2D00-4482-B2E9-11574B26C473}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
@@ -2117,6 +2439,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Death-Stinger" ID="{B241B98F-A4E0-48ED-80DE-FFF14B0C14EB}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Low_Health" ID="{DC907D1A-13BD-4033-ACBD-E53B7FA3811B}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Low-Health" ID="{D86B9369-CD6E-4F0A-A50A-06FC3D5E6DD9}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>
