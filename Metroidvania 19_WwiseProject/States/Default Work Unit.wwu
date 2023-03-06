@@ -12,6 +12,7 @@
 						<State Name="Defeat_Enemy" ID="{FCE6578B-82C5-4EF9-8554-0E2225473DDE}"/>
 						<State Name="Death" ID="{E8EAD319-145C-4736-9FDA-6CDA76566550}"/>
 						<State Name="Low_Health" ID="{DC907D1A-13BD-4033-ACBD-E53B7FA3811B}"/>
+						<State Name="Final_Stage" ID="{50718912-4A54-4B06-AAC6-75EE261AB557}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
