@@ -47,50 +47,79 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Serpent_UI_Sounds_Cancel" ID="{725D2D7D-F40F-4C9A-B997-E6B8EB6323EC}">
+				<Folder Name="UI Events" ID="{452CF11E-770B-462E-97B5-86CF602D7A04}" ShortID="484293666">
 					<ChildrenList>
-						<Action Name="" ID="{CD767902-949B-4E93-8DE2-22F9E14FEAF0}" ShortID="443210499">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Serpent_UI_Sounds Cancel" ID="{37B52006-53D1-40EA-AA34-50C0D9F0F9AA}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_Serpent_UI_Sounds_Select" ID="{8D9C1CB2-2AF3-4D85-A183-46294D58DDCC}">
+							<ChildrenList>
+								<Action Name="" ID="{6EC50BDA-D003-4BE4-961F-7B70A0D64278}" ShortID="1046864480">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Serpent_UI_Sounds Select" ID="{EF5B0410-D28B-4206-BDC7-163D6665B219}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Serpent_UI_Sounds_Hover" ID="{9C3DB5BA-BCB8-447E-95C3-9E0520DAC3D4}">
+							<ChildrenList>
+								<Action Name="" ID="{050CA854-0613-417D-8692-AFBA82394BE7}" ShortID="384257914">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Serpent_UI_Sounds Hover" ID="{6D486561-962E-42D5-A970-738362707F75}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Serpent_UI_Sounds_Cancel" ID="{725D2D7D-F40F-4C9A-B997-E6B8EB6323EC}">
+							<ChildrenList>
+								<Action Name="" ID="{CD767902-949B-4E93-8DE2-22F9E14FEAF0}" ShortID="443210499">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Serpent_UI_Sounds Cancel" ID="{37B52006-53D1-40EA-AA34-50C0D9F0F9AA}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Serpent_UI_Sounds_Confirm" ID="{68E6EE06-10D9-4D00-9C43-8C79581C5333}">
+							<ChildrenList>
+								<Action Name="" ID="{F2D5EA3F-2EDC-40EB-8ED2-6D0B9D481FE2}" ShortID="333759251">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Serpent_UI_Sounds Confirm" ID="{A3D284E1-1B72-4A83-AAB4-AF91D9C2DBCE}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_MainMenu" ID="{93D2760F-9D31-46BC-A20A-EC07CCEB6DC4}">
+							<ChildrenList>
+								<Action Name="" ID="{1089408A-C55F-4F91-9BEE-2FB544875F60}" ShortID="527498292">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stage-1" ID="{2154DE6F-BB20-4006-83DE-08EA99CA97BE}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MainMenu" ID="{022AEA91-0F56-4BD7-B0BD-546A26F235C2}">
+							<ChildrenList>
+								<Action Name="" ID="{873B3A1B-229C-407C-9299-889F51225A4E}" ShortID="62562927">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stage-1" ID="{2154DE6F-BB20-4006-83DE-08EA99CA97BE}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_Serpent_UI_Sounds_Confirm" ID="{68E6EE06-10D9-4D00-9C43-8C79581C5333}">
-					<ChildrenList>
-						<Action Name="" ID="{F2D5EA3F-2EDC-40EB-8ED2-6D0B9D481FE2}" ShortID="333759251">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Serpent_UI_Sounds Confirm" ID="{A3D284E1-1B72-4A83-AAB4-AF91D9C2DBCE}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Serpent_UI_Sounds_Hover" ID="{9C3DB5BA-BCB8-447E-95C3-9E0520DAC3D4}">
-					<ChildrenList>
-						<Action Name="" ID="{050CA854-0613-417D-8692-AFBA82394BE7}" ShortID="384257914">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Serpent_UI_Sounds Hover" ID="{6D486561-962E-42D5-A970-738362707F75}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Serpent_UI_Sounds_Select" ID="{8D9C1CB2-2AF3-4D85-A183-46294D58DDCC}">
-					<ChildrenList>
-						<Action Name="" ID="{6EC50BDA-D003-4BE4-961F-7B70A0D64278}" ShortID="1046864480">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Serpent_UI_Sounds Select" ID="{EF5B0410-D28B-4206-BDC7-163D6665B219}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

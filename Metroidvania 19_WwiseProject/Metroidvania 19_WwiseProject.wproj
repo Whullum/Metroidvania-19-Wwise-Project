@@ -38,8 +38,8 @@
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\..\..\Unity Repo\Metroidvania-19\Metroidvania 19\Assets\StreamingAssets\Audio\GeneratedSoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Mac">..\..\Metroidvania-19\Metroidvania 19\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</Value>
-						<Value Platform="Windows">..\..\Metroidvania-19\Metroidvania 19\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Mac">..\..\..\Unity Repo\Metroidvania-19\Metroidvania 19\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</Value>
+						<Value Platform="Windows">..\..\..\Unity Repo\Metroidvania-19\Metroidvania 19\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">

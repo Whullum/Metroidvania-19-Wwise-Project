@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0C20BBA8-57DD-4856-B893-FEEDCFC17667}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{0C20BBA8-57DD-4856-B893-FEEDCFC17667}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0C20BBA8-57DD-4856-B893-FEEDCFC17667}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="MusicSoundcaster" ID="{0520B262-73B0-41BA-ABFD-070A05E6F7B5}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Stage_1" ID="{636BAB29-67B2-4CB7-8FF6-2387CC1D5B94}" WorkUnitID="{96FB097C-E30C-48BB-B66A-8B53E7E942EC}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{14D9DC9E-3C49-411F-881B-AD83E10E459D}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{F0921D28-DF83-4A7C-AE19-4D28E848D180}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="EnemyProximity" ID="{8465B9B3-CE07-4C36-B630-A17E12ADA0BE}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{7AFBE7DA-D534-4F01-B3CA-40C6E979FA4A}"/>
+							<Value>80</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Low_Health" ID="{DC907D1A-13BD-4033-ACBD-E53B7FA3811B}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

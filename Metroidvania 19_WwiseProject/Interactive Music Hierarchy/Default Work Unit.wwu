@@ -9,13 +9,18 @@
 						<Property Name="Tempo" Type="Real64" Value="80"/>
 						<Property Name="TimeSignatureLower" Type="int16" Value="8"/>
 						<Property Name="TimeSignatureUpper" Type="int16" Value="9"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82859921-F80F-4A28-B40F-355B7CFDC289}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+							<ObjectRef Name="MusicBus" ID="{2170E104-F6BA-45A5-9A87-437F038830C4}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1710,6 +1715,45 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{60E50FB1-FE95-4991-8B4E-08E440F70094}" ShortID="170243011">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="EnemyProximity" ID="{8465B9B3-CE07-4C36-B630-A17E12ADA0BE}" WorkUnitID="{E018E956-9349-41AC-9DD8-A9C4F1330F30}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{36872876-6D25-4656-80B6-D24545BB1A15}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.03612</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{C17D9A49-4D20-47D7-97C9-EE0007B0BA11}" ShortID="417565233">
 									<ChildrenList>
@@ -2234,7 +2278,7 @@
 																									</Point>
 																									<Point>
 																										<XPos>123.75</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -2466,7 +2510,7 @@
 								<MusicTransition Name="Transition" ID="{B3030C77-8494-4A40-9F27-4038E226CCCC}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
@@ -2634,6 +2678,18 @@
 									</ReferenceList>
 									<TransitionInfo/>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{D4B15A0D-FF5A-46A0-BADA-AAB26345084D}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Final-stage" ID="{DBEA63E9-042A-47DF-AA80-1CDCC3B69FDC}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
@@ -2696,6 +2752,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Final-stage" ID="{DBEA63E9-042A-47DF-AA80-1CDCC3B69FDC}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="None" ID="{041CB25E-6916-49E5-969C-38A24C37B086}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Stage-1-Main" ID="{4A1ED18B-17A6-4D2C-A11C-82541082ECBA}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>
