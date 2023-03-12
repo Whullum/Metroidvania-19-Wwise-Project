@@ -6,9 +6,12 @@
 				<Property Name="Event Action List\{022AEA91-0F56-4BD7-B0BD-546A26F235C2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2D77E95D-739B-47E5-B2E0-B587E5CE6E16}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{636BAB29-67B2-4CB7-8FF6-2387CC1D5B94}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{69EE9947-5669-4AD5-8241-0D122663D43E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{725D2D7D-F40F-4C9A-B997-E6B8EB6323EC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{93D2760F-9D31-46BC-A20A-EC07CCEB6DC4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D83B6661-2B84-46F2-A158-74F1808A3072}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E05BAC8B-63A9-447D-BDFA-8D12CC9CCA92}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F4D2DC03-5555-41A5-85B9-9C321122B6EE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{FB1302D0-51C3-4197-A213-4794F253DACA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
@@ -134,6 +137,19 @@
 				</Property>
 				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{0520B262-73B0-41BA-ABFD-070A05E6F7B5}"/>
 			</PropertyList>
+			<PluginInnerObjectList>
+				<List Name="BatchRenameSettings">
+					<PluginInnerObject Name="" ID="{F90213DF-0769-413F-ADFB-E1C80713F080}" PluginName="BatchRenameSettings" CompanyID="0" PluginID="992">
+						<PropertyList>
+							<Property Name="EnableInsert" Type="bool" Value="True"/>
+							<Property Name="EnableRemove" Type="bool" Value="True"/>
+							<Property Name="InsertToInsert" Type="string" Value="UI_"/>
+							<Property Name="RemoveCount" Type="int32" Value="18"/>
+							<Property Name="insertFrom" Type="int16" Value="0"/>
+						</PropertyList>
+					</PluginInnerObject>
+				</List>
+			</PluginInnerObjectList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>
 </WwiseDocument>
