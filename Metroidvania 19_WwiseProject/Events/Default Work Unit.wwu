@@ -14,39 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Bite" ID="{2D77E95D-739B-47E5-B2E0-B587E5CE6E16}">
-					<ChildrenList>
-						<Action Name="" ID="{5CC22415-1846-4F45-8E09-5E255ED9C856}" ShortID="517194674">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Bite" ID="{60F6A401-9741-43A5-9CF1-7F66FBD1BA3C}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Dash" ID="{FB1302D0-51C3-4197-A213-4794F253DACA}">
-					<ChildrenList>
-						<Action Name="" ID="{DAAC115E-35AD-4F30-BBC2-14A4DC3CCA6C}" ShortID="345898297">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Dash" ID="{BBF3961A-CB05-4BBA-B763-48439591A9AF}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Projectile" ID="{E05BAC8B-63A9-447D-BDFA-8D12CC9CCA92}">
-					<ChildrenList>
-						<Action Name="" ID="{4C8F2EE9-BDF4-434D-8043-3EBC78295150}" ShortID="793420482">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Projectile" ID="{18080B2C-1EFE-4790-A65E-A4E2978651C1}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="UI Events" ID="{452CF11E-770B-462E-97B5-86CF602D7A04}" ShortID="484293666">
 					<ChildrenList>
 						<Event Name="Play_Serpent_UI_Sounds_Select" ID="{8D9C1CB2-2AF3-4D85-A183-46294D58DDCC}">
@@ -54,7 +21,7 @@
 								<Action Name="" ID="{6EC50BDA-D003-4BE4-961F-7B70A0D64278}" ShortID="1046864480">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Serpent_UI_Sounds Select" ID="{EF5B0410-D28B-4206-BDC7-163D6665B219}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+											<ObjectRef Name="UI_Select" ID="{EF5B0410-D28B-4206-BDC7-163D6665B219}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -65,7 +32,7 @@
 								<Action Name="" ID="{050CA854-0613-417D-8692-AFBA82394BE7}" ShortID="384257914">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Serpent_UI_Sounds Hover" ID="{6D486561-962E-42D5-A970-738362707F75}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+											<ObjectRef Name="UI_Hover" ID="{6D486561-962E-42D5-A970-738362707F75}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -76,7 +43,7 @@
 								<Action Name="" ID="{CD767902-949B-4E93-8DE2-22F9E14FEAF0}" ShortID="443210499">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Serpent_UI_Sounds Cancel" ID="{37B52006-53D1-40EA-AA34-50C0D9F0F9AA}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+											<ObjectRef Name="UI_Cancel" ID="{37B52006-53D1-40EA-AA34-50C0D9F0F9AA}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -87,7 +54,7 @@
 								<Action Name="" ID="{F2D5EA3F-2EDC-40EB-8ED2-6D0B9D481FE2}" ShortID="333759251">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Serpent_UI_Sounds Confirm" ID="{A3D284E1-1B72-4A83-AAB4-AF91D9C2DBCE}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+											<ObjectRef Name="UI_Confirm" ID="{A3D284E1-1B72-4A83-AAB4-AF91D9C2DBCE}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -113,6 +80,117 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Stage-1" ID="{2154DE6F-BB20-4006-83DE-08EA99CA97BE}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_StartGame_Confrimation" ID="{F4D2DC03-5555-41A5-85B9-9C321122B6EE}">
+							<ChildrenList>
+								<Action Name="" ID="{83084FFC-D3F0-46B7-90AB-BBBD65CBFBC0}" ShortID="153713796">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_StartGame_Confrimation" ID="{CE9EBA8E-21D0-4DC3-A816-F2EA23D946AD}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player" ID="{8E7366BF-B0AA-4AB0-B547-A598E42543E0}" ShortID="537106701">
+					<ChildrenList>
+						<Event Name="Play_Dash" ID="{FB1302D0-51C3-4197-A213-4794F253DACA}">
+							<ChildrenList>
+								<Action Name="" ID="{DAAC115E-35AD-4F30-BBC2-14A4DC3CCA6C}" ShortID="345898297">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dash" ID="{BBF3961A-CB05-4BBA-B763-48439591A9AF}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Projectile" ID="{E05BAC8B-63A9-447D-BDFA-8D12CC9CCA92}">
+							<ChildrenList>
+								<Action Name="" ID="{4C8F2EE9-BDF4-434D-8043-3EBC78295150}" ShortID="793420482">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Projectile" ID="{18080B2C-1EFE-4790-A65E-A4E2978651C1}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Bite" ID="{2D77E95D-739B-47E5-B2E0-B587E5CE6E16}">
+							<ChildrenList>
+								<Action Name="" ID="{5CC22415-1846-4F45-8E09-5E255ED9C856}" ShortID="517194674">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bite" ID="{60F6A401-9741-43A5-9CF1-7F66FBD1BA3C}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemy" ID="{DF83DAC9-F596-4638-8CDF-CB2FA4A9ABAC}" ShortID="888584164">
+					<ChildrenList>
+						<Event Name="Play_EnemyDamaged_Fauna" ID="{D83B6661-2B84-46F2-A158-74F1808A3072}">
+							<ChildrenList>
+								<Action Name="" ID="{8703341F-AE20-4230-8ED7-EF1FDFBFBBB1}" ShortID="659574745">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EnemyDamaged_Fauna" ID="{4B1F8EBB-D095-40DC-8635-8BFFCE53DF16}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_EnemyDamaged_Metal" ID="{69EE9947-5669-4AD5-8241-0D122663D43E}">
+							<ChildrenList>
+								<Action Name="" ID="{388BD82F-F34F-4796-86C4-21FAC41153F4}" ShortID="1000826098">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EnemyDamaged_Metal" ID="{207213FD-BE5D-4F29-9FA5-ABE070FB9645}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Interactables" ID="{481DF6BA-F482-46F0-92D2-511BC7B82CC2}" ShortID="126189155">
+					<ChildrenList>
+						<Event Name="Play_Interactables_Object_Activation" ID="{950AA3F9-9C53-4F17-8959-F3EAE4CBDA91}">
+							<ChildrenList>
+								<Action Name="" ID="{94CC3FA4-0EA3-47C5-A925-252E62E28DDB}" ShortID="520255980">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interactables_Object_Activation" ID="{50670CBD-F008-4BE6-8914-EC3D933C9D1B}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Interactables_Wall_Destruction" ID="{007CF4A3-6F2C-4324-8A6F-29448452D8B9}">
+							<ChildrenList>
+								<Action Name="" ID="{4AC627BA-9CA3-4ED4-BB1C-2A169532FE16}" ShortID="810836262">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interactables_Wall Destruction" ID="{5B38A167-F0B1-4B58-8B38-75E610063EE8}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Interactables_Button_Lever" ID="{A685C7C8-6811-4B7C-B0C0-01C3C6EE4C4A}">
+							<ChildrenList>
+								<Action Name="" ID="{65C1C49F-EBD2-427B-870A-591630CA2FE3}" ShortID="649373863">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interactables_Button-Lever" ID="{E77BC980-716E-46EB-9E29-ECF701C1D95B}" WorkUnitID="{E800D077-8AB2-4787-BF78-DA4C7940D00E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
