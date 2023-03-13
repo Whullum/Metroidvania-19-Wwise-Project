@@ -2551,6 +2551,243 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicSegment Name="To-Normal-Health" ID="{8492674D-7135-4364-8024-E5AD3343595E}" ShortID="361852133">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="19230.7709750567"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82859921-F80F-4A28-B40F-355B7CFDC289}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="serpent-to-normal-health-transition" ID="{A6E5D8C6-5D0F-4E83-84F4-3190E1D79DA7}" ShortID="195471556">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="serpent-to-normal-health-transition" ID="{8AD648FB-5F6B-4B22-8F2C-96F7161E5593}">
+											<Language>SFX</Language>
+											<AudioFile>serpent-to-normal-health-transition.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="376937466"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{01D78B11-D623-4F95-8EF0-BB1C3C27A33F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{648C73BE-18DD-4A54-BF37-680A12B6D66B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="serpent-to-normal-health-transition" ID="{21A36FB2-ECD1-4975-88A4-7C9D9D03DFC9}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="19230.7709750567"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="serpent-to-normal-health-transition" ID="{8AD648FB-5F6B-4B22-8F2C-96F7161E5593}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{6E6F9C08-F1FB-4296-8110-50382C7E143F}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{08F47C79-6045-4826-9A85-8046FB8D430F}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1872.20873786408"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="To-Low-Health" ID="{9A83373C-CEE3-4B21-8120-C8022EFFAD95}" ShortID="762908250">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="19230.7709750567"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82859921-F80F-4A28-B40F-355B7CFDC289}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="serpent-low-health-transition" ID="{0146F1F5-669B-4274-A7AC-4CF00F183544}" ShortID="534458486">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0F63B9AD-B358-4B58-8707-117AAC06E2B4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="serpent-low-health-transition" ID="{55206060-EF51-44BA-85C7-95A081F916B2}">
+											<Language>SFX</Language>
+											<AudioFile>serpent-low-health-transition.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="941609776"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3669D8C4-829E-4B71-ABEC-10663D63A504}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{05BE9CE3-4D5F-40D6-B43D-B3B3765323EE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="serpent-low-health-transition" ID="{FFDCCC02-D270-42BB-8E73-85170218EFE6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="10063.4811218986"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1456.31081170332"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="serpent-low-health-transition" ID="{55206060-EF51-44BA-85C7-95A081F916B2}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{34CD1018-085D-49E2-A920-FFF623400752}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>10.06348</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{AB2A98D4-468B-4459-ABC1-7130B22877A2}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>10.06348</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{087E5211-FD5A-46BF-A607-56F7F4032FE8}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>10.06348</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{8B9EE432-BACD-4297-A82F-94C38885D62F}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{5933652A-A349-4FDA-BFA6-2C4310C50355}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1840.17931444422"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -2912,6 +3149,111 @@
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{6B131DFA-AE7A-4493-9EC0-90612EB72239}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableTransitionFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableTransitionFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Stage-1-Main" ID="{4A1ED18B-17A6-4D2C-A11C-82541082ECBA}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Low-Health" ID="{D86B9369-CD6E-4F0A-A50A-06FC3D5E6DD9}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="To-Normal-Health" ID="{8492674D-7135-4364-8024-E5AD3343595E}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										<TransitionFadeIn>
+											<MusicFade Name="Transition Fade-in" ID="{D27A4AB9-8D5A-46E2-BDCF-64CCE4461BF5}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-0.6"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+												</PropertyList>
+											</MusicFade>
+										</TransitionFadeIn>
+										<TransitionFadeOut>
+											<MusicFade Name="Transition Fade-out" ID="{42E2DCBE-D066-4437-93A5-ABA8A8582FDE}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="0.9"/>
+													<Property Name="FadeTime" Type="Real64" Value="1.6"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</TransitionFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{320F0D57-6764-40B0-93AB-B6B7A24E5743}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableTransitionFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Final-stage" ID="{DBEA63E9-042A-47DF-AA80-1CDCC3B69FDC}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Low-Health" ID="{D86B9369-CD6E-4F0A-A50A-06FC3D5E6DD9}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="To-Normal-Health" ID="{8492674D-7135-4364-8024-E5AD3343595E}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										<TransitionFadeOut>
+											<MusicFade Name="Transition Fade-out" ID="{D79606EE-47DA-492D-809E-F56B5BDCB8EF}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="0.9"/>
+													<Property Name="FadeTime" Type="Real64" Value="1.7"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</TransitionFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{111C10C0-033C-4D61-9C6A-141DA22F63BA}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Low-Health" ID="{D86B9369-CD6E-4F0A-A50A-06FC3D5E6DD9}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Stage-1-Main" ID="{4A1ED18B-17A6-4D2C-A11C-82541082ECBA}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="To-Low-Health" ID="{9A83373C-CEE3-4B21-8120-C8022EFFAD95}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{8E19DF52-2BEF-4996-A892-9658B01A79B6}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Low-Health" ID="{D86B9369-CD6E-4F0A-A50A-06FC3D5E6DD9}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Final-stage" ID="{DBEA63E9-042A-47DF-AA80-1CDCC3B69FDC}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="To-Low-Health" ID="{9A83373C-CEE3-4B21-8120-C8022EFFAD95}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
