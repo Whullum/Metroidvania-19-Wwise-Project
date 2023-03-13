@@ -2552,6 +2552,23 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Pause" ID="{8FBA5D16-6CE3-46E9-8D2F-9AF01A1590AD}"/>
+								<CustomState Name="" ID="{C9F0103D-D971-46D5-B549-815CA8F53747}" ShortID="284738433">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="60"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{1F0A681F-068B-4DBE-BE18-6BF956030895}">
 							<PropertyList>
@@ -2901,11 +2918,13 @@
 						</MusicTransition>
 					</TransitionList>
 					<ArgumentList>
+						<ArgumentRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
 						<ArgumentRef Name="Gameplay" ID="{58866559-4C7B-44FB-AA83-529EB257BFA1}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
 							<Path>
+								<PathElementRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
 								<PathElementRef Name="Normal" ID="{C0E2D49E-4EBA-48A4-B988-841722622597}"/>
 							</Path>
 							<AudioNodeInfo>
@@ -2914,6 +2933,7 @@
 						</Entry>
 						<Entry>
 							<Path>
+								<PathElementRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
 								<PathElementRef Name="Combat" ID="{7D0AB251-7D0E-46D6-AB46-DCCB9B0E2DD8}"/>
 							</Path>
 							<AudioNodeInfo>
@@ -2922,6 +2942,7 @@
 						</Entry>
 						<Entry>
 							<Path>
+								<PathElementRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
 								<PathElementRef Name="Defeat_Enemy" ID="{FCE6578B-82C5-4EF9-8554-0E2225473DDE}"/>
 							</Path>
 							<AudioNodeInfo>
@@ -2930,6 +2951,7 @@
 						</Entry>
 						<Entry>
 							<Path>
+								<PathElementRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
 								<PathElementRef Name="Approach_Enemy" ID="{E5C1FDD6-83E4-4E27-B224-8FD62F69B91B}"/>
 							</Path>
 							<AudioNodeInfo>
@@ -2938,6 +2960,7 @@
 						</Entry>
 						<Entry>
 							<Path>
+								<PathElementRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
 								<PathElementRef Name="Death" ID="{E8EAD319-145C-4736-9FDA-6CDA76566550}"/>
 							</Path>
 							<AudioNodeInfo>
@@ -2946,6 +2969,7 @@
 						</Entry>
 						<Entry>
 							<Path>
+								<PathElementRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
 								<PathElementRef Name="Low_Health" ID="{DC907D1A-13BD-4033-ACBD-E53B7FA3811B}"/>
 							</Path>
 							<AudioNodeInfo>
@@ -2954,6 +2978,7 @@
 						</Entry>
 						<Entry>
 							<Path>
+								<PathElementRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
 								<PathElementRef Name="Final_Stage" ID="{50718912-4A54-4B06-AAC6-75EE261AB557}"/>
 							</Path>
 							<AudioNodeInfo>
@@ -2962,6 +2987,7 @@
 						</Entry>
 						<Entry>
 							<Path>
+								<PathElementRef Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}"/>
 								<PathElementRef Name="None" ID="{041CB25E-6916-49E5-969C-38A24C37B086}"/>
 							</Path>
 							<AudioNodeInfo>
