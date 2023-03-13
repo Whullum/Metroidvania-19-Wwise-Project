@@ -15,6 +15,12 @@
 						<State Name="Final_Stage" ID="{50718912-4A54-4B06-AAC6-75EE261AB557}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Pause" ID="{15163341-ECC0-43F6-BD1C-23ABB1AAFCC8}">
+					<ChildrenList>
+						<State Name="None" ID="{54C8835A-53ED-46E9-8645-E1CD0CB19086}"/>
+						<State Name="Pause" ID="{8FBA5D16-6CE3-46E9-8D2F-9AF01A1590AD}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
