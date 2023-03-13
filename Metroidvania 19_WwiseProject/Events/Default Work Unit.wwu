@@ -223,6 +223,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Item_Pickup_Stinger" ID="{2B29ECC5-C288-4970-A81C-15CA501C6011}">
+					<ChildrenList>
+						<Action Name="" ID="{4D192DCA-B26E-4AA3-8ACE-23DA2F779382}" ShortID="440131429">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Item-pickup-stinger" ID="{D2FE9EBB-DEDB-4A59-AC20-C2E3607E4184}" WorkUnitID="{90657AF5-C9BE-46DA-8E3F-62BE475229BD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
